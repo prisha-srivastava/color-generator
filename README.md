@@ -1,3 +1,3 @@
-#### Values JS
+#### Color Generator
+Generates a variety of shades as per the hex code provided by the user
 
-[values.js](https://github.com/noeldelgado/values.js)
