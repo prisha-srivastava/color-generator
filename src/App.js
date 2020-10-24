@@ -7,12 +7,12 @@ function App() {
   //states
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#2d6187").all(10));
+  const [list, setList] = useState(new Values("#2d6187").all(6));
 
   const handlesubmit = (e) => {
     e.preventDefault();
     try {
-      let colors = new Values(color).all(15);
+      let colors = new Values(color).all(6);
       setList(colors);
     } catch {
       setError(true);
