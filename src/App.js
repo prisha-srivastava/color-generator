@@ -7,8 +7,9 @@ function App() {
   //states
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
+  // const [range, setRange] = useState("");
   const [list, setList] = useState(new Values("#2d6187").all(6));
-
+  
   const handlesubmit = (e) => {
     e.preventDefault();
     try {
@@ -38,7 +39,7 @@ function App() {
           {/* <select
             name="range"
             className="select"
-            
+            onChange={(e) => setRange({ value: e.target.value })}
           >
             <option value="1">1</option>
             <option value="2">2</option>
